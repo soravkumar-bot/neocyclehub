@@ -86,6 +86,37 @@
         </div>
     </div>
 </footer>
+<!-- Age Verification Popup -->
+<div id="age-verification" class="age-overlay">
+  <div class="age-popup">
+    <h2>Important Notice</h2>
+    <p>This website provides career development tools and informational content for general guidance only. By continuing, you agree to our Terms of Use and Privacy Policy.</p>
+    <div class="age-buttons">
+      <button id="btn-yes">Continue</button>
+     
+    </div>
+  </div>
+</div>
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var yesBtn = document.getElementById("btn-yes");
+    var noBtn = document.getElementById("btn-no");
+ 
+    // Change these URLs as you want
+    var yesLink = "/home/";  
+    var noLink = "/home/";  
+ 
+    yesBtn.addEventListener("click", function () {
+      window.location.href = yesLink;
+    });
+ 
+    noBtn.addEventListener("click", function () {
+      window.location.href = noLink;
+    });
+  });
+</script>
 
 </body>
 </html>
+
